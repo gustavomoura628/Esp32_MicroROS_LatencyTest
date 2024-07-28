@@ -7,7 +7,7 @@ class PingPublisher(Node):
     def __init__(self):
         super().__init__('ping_publisher')
         self.publisher_ = self.create_publisher(Header, '/microROS/ping', 10)
-        self.timer = self.create_timer(0.1, self.timer_callback)
+        self.timer = self.create_timer(1.0/30, self.timer_callback)
     
     def timer_callback(self):
         msg = Header()
