@@ -1,0 +1,38 @@
+[INFO] [1722047949.099277449] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047948, nanosec=919016354)
+[INFO] [1722047949.099488052] [pong_subscriber]: Time difference = 172.436824 milliseconds
+[INFO] [1722047950.040066337] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047949, nanosec=919212410)
+[INFO] [1722047950.040580129] [pong_subscriber]: Time difference = 120.195941 milliseconds
+[INFO] [1722047950.957753093] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047950, nanosec=919158651)
+[INFO] [1722047950.958581576] [pong_subscriber]: Time difference = 37.574071 milliseconds
+[INFO] [1722047952.171487398] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047951, nanosec=918802032)
+[INFO] [1722047952.172269549] [pong_subscriber]: Time difference = 251.712811 milliseconds
+[INFO] [1722047953.114320845] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047952, nanosec=918834733)
+[INFO] [1722047953.115019835] [pong_subscriber]: Time difference = 194.473198 milliseconds
+[INFO] [1722047954.118414322] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047953, nanosec=919263599)
+[INFO] [1722047954.119268100] [pong_subscriber]: Time difference = 197.872331 milliseconds
+[INFO] [1722047955.142282848] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047954, nanosec=919092001)
+[INFO] [1722047955.143026575] [pong_subscriber]: Time difference = 222.152233 milliseconds
+[INFO] [1722047956.167447016] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047955, nanosec=919075728)
+[INFO] [1722047956.168229436] [pong_subscriber]: Time difference = 247.346734 milliseconds
+[INFO] [1722047957.190016159] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047956, nanosec=918999019)
+[INFO] [1722047957.191104110] [pong_subscriber]: Time difference = 269.549879 milliseconds
+[INFO] [1722047958.214265930] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047957, nanosec=919097478)
+[INFO] [1722047958.215431426] [pong_subscriber]: Time difference = 293.621645 milliseconds
+[INFO] [1722047959.241416042] [pong_subscriber]: Received: ping_computer with timestamp builtin_interfaces.msg.Time(sec=1722047958, nanosec=918906348)
+[INFO] [1722047959.242490234] [pong_subscriber]: Time difference = 321.396624 milliseconds
+Traceback (most recent call last):
+  File "/home/gus/ufg/SSL/ros2_ping_pong_example/header_ping_pong/pong_subscriber.py", line 33, in <module>
+    main()
+  File "/home/gus/ufg/SSL/ros2_ping_pong_example/header_ping_pong/pong_subscriber.py", line 28, in main
+    rclpy.spin(pong_subscriber)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 608, in _wait_for_ready_callbacks
+    wait_set.wait(timeout_nsec)
+KeyboardInterrupt
